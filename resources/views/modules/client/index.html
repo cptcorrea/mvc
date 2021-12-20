@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<h1>Clientes</h1>
+<p>Relação dos clientes</p>
+<hr>
+<a href="{{URL}}/client/new">
+<button type="button" class="btn btn-success">Cadastrar cliente</button>
+</a>
+<hr>
+{{status}}
+<table class="table table-light table-striped">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th style="width:200px;">Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Data modificação</th>
+            <th style="width:200px;">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+       {{itens}}
+    </tbody>
+</table>
+{{pagination}}
